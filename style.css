@@ -1,0 +1,75 @@
+body {
+    background-color: black;
+}
+
+.main {
+
+    display: flex;
+}
+
+h2 {
+    color: brown;
+}
+
+.var {
+    display: flex;
+}
+
+.var input {
+    margin: 10px;
+    width: 70px;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(228, 22, 22, 0.7);
+    border: transparent;
+    border-radius: 8px;
+    border: 2px solid white;
+    font-size: 20px;
+    cursor: default;
+    color: aliceblue;
+}
+
+.me {
+    width: 100%;
+    height: 100vh;
+    margin-top: 10px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btnme {
+    margin: 20px;
+    background-color: green;
+    border: transparent;
+    border-radius: 5px;
+}
+
+.btnme:hover {
+    border: 1px solid red;
+}
+/* 
+#btnL:hover {
+    border: 1px solid red;
+}
+
+#btnR:hover {
+    border: 1px solid red;
+}
+#btnStop:hover {
+    border: 1px solid red;
+} */
+
+li {
+    list-style: none;
+    color: white;
+}
+
+ul {
+    max-height: 200px;
+    overflow-y: auto;
+    min-width: 400px;
+    text-align: center;
+}

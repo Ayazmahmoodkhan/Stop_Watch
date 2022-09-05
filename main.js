@@ -43,16 +43,24 @@ function startwatch()
 }
 function lapwatch(){
     let msval=parseInt(document.getElementById('ms').value);
-    let sval=parseInt(document.getElementById('s').value);
-    let mval=parseInt(document.getElementById('m').value);
-    let z = document.createElement("li");
-    // z.classList.add("asdf");
-    z.innerHTML =  `${mval} : ${sval} : ${msval}<br>`;
-    document.getElementById("abc").prepend(z);
+        let sval=parseInt(document.getElementById('s').value);
+        let mval=parseInt(document.getElementById('m').value);
+    if(msval==0){
+        alert("not allowed")
+return;
+    }
+    else{
+        let z = document.createElement("li");
+        // z.classList.add("asdf");
+        z.innerHTML =  `${mval} : ${sval} : ${msval}<br>`;
+        document.getElementById("abc").prepend(z);
+    }
+   
     
 
 }
 function resetwatch(){
+    clearInterval(myInterval);
     document.getElementById("ms").value="00";
     document.getElementById("s").value="00";
     document.getElementById("m").value="00";
